@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".modificarme">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modificar mi cuenta"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:gravity="center"
+            android:layout_margin="20dp"/>
+
+        <EditText
+            android:id="@+id/vContrasena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Contraseña" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Qué deseas modificar?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_marginTop="20dp" />
+
+        <Spinner
+            android:id="@+id/sModificar"
+            android:layout_width="226dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/datoNuevo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Dato nuevo:"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:text="MODIFICAR"
+            android:onClick="modificar"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:text="REGRESAR"
+            android:onClick="regresar"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

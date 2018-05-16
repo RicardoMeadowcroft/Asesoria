@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".inscrito">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Asesorías Incritas"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_marginTop="20dp"
+            android:gravity="center"/>
+
+        <Spinner
+            android:id="@+id/clases"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/tiempo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Horario:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/lugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lugar:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/profesor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profesor:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:id="@+id/puntaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calificación de profesor:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alumnos Incritos:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_margin="20dp"/>
+
+        <ListView
+            android:id="@+id/inscritos"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Regresar"
+                android:onClick="regresar"
+                android:layout_marginRight="20dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Desinscribir"
+                android:onClick="desinscribir"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
